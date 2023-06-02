@@ -1,0 +1,237 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: #8D3DAF;
+    color: #fff;
+}
+nav h1{
+    padding-left:50px;
+    padding-top: 25px;
+}
+
+nav .log-out{
+    width: 30px;
+    height: 30px;
+    /* border: 1px solid red; */
+    font-size: 25px;
+    position: absolute;
+    top: 23px;
+    right: 50px;
+}
+nav a .log-out{
+    color: #fff;
+}
+nav .log-out:hover{
+    color: red;
+}
+
+
+/* ------------doctor main page------------ */
+
+.main-doctor-page{
+    width: 80%;
+    height: 500px;
+    /* border: 2px solid green; */
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color:aliceblue
+    
+   
+}
+.main-doctor-page:hover{
+    background-color:beige
+}
+.main-doctor-page p{
+    color: green;
+    text-align: center;
+    padding-top: 20px;
+    
+}
+.main-doctor-page h2{
+    text-align: center;
+    padding-bottom: 20px;
+
+}
+.main-doctor-page .container-card{
+    width: 90%;
+    height: 150px;
+    /* border: 1px solid blue; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+   
+}
+.main-doctor-page .container-card .card{
+    width: 20%;
+    height: 150px;
+    background-color: #3B71CA;
+    border-radius: 10px;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    padding: 30px 30px;
+}
+.main-doctor-page .container-card .card:hover{
+    background-color: green;
+    color: black;
+    cursor: pointer;
+}
+
+/* --------view-patients------ */
+.view-patients{
+    width: 90%;
+    height: 500px;
+    border: 2px solid green;
+    margin: auto;
+    position: absolute;
+    top: 100px;
+    left: 5%;
+    border-radius: 10px;
+    background-color: aliceblue;
+    display: none;
+    
+}
+.view-patients .cut-icon{
+    font-size: 25px;
+    position: relative;
+    float: right;
+    right: 20px;
+    top: 15px;
+    
+}
+.view-patients .cut-icon:hover{
+    color: red;
+    transform: rotate(-90deg);
+    transition: 0.5s;
+}
+.view-patients h1{
+    text-align: center;
+    padding: 20px;
+}
+
+
+.patients{
+    width: 70%;
+    height: 400px;
+    /* border: 1px solid black; */
+    margin-top: 10px;
+    margin: auto;
+    overflow: auto;
+    
+}
+
+.patients #reciptionist {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+   
+    
+    
+  }
+  
+  .patients #reciptionist td, #reciptionist th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    
+  }
+  .patients #reciptionist td button{
+    width: 100px;
+    height: 35px;
+    background:#3B71CA;
+    padding: 7px;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-left: 10px;
+    text-align: center;
+    
+    color: #fff;
+  }
+  .patients #reciptionist td button:hover{
+    background-color: green;
+  }
+ 
+  .view-doctor-details #reciptionist tr:nth-child(even){background-color: #f2f2f2;}
+  
+  .view-doctor-details #reciptionist tr:hover {background-color: #ddd;}
+  
+  .view-doctor-details #reciptionist th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #54B4D3;
+    color: white;
+  }
+
+
+/* ------------prescription-------- */
+
+.prescription{
+    width: 50%;
+    height: 460px;
+    border: 2px solid green;
+    border-radius: 10px;
+    position: absolute;
+    top: 20px;
+    left: 20%;
+    background-color: #f2f2f2;
+    padding: 50px 50px 0px 50px;
+    display: none;
+   
+}
+.prescription p{
+    color: black;
+    font-weight: 600;
+}
+
+.prescription .cut-icon2{
+    font-size: 25px;
+    position: relative;
+    float: right;
+    right: 0px;
+    top: 0;
+    
+}
+.prescription .cut-icon2:hover{
+    color: red;
+    transform: rotate(-90deg);
+    transition: 0.5s;
+}
+.prescription input[type=text]{
+    width: 300px;
+    height: 30px;
+}
+.prescription textarea{
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 250px;
+    min-height: 250px;
+    padding: 10px;
+    font-weight: 600;
+}
+.prescription .btn{
+    width: 80px;
+    height: 30px;
+   
+    float: right;
+    margin-top: 20px;
+}
+.prescription .btn button{
+    width: 80px;
+    height: 30px;
+    background-color: #3B71CA;
+    border: none;
+    color: #fff;
+    border-radius: 2px;
+}
+

@@ -1,0 +1,66 @@
+.main-body {
+    width: 52%;
+    height: 500px;
+    background-color: red;
+    /* border: 1px solid red; */
+}
+
+.main-body img {
+    width: 100%;
+}
+
+.login {
+    width: 40%;
+    height: 400px;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 150px;
+    right: 100px;
+    background-color: #CAD5E2;
+    border-radius: 20px;
+    
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.login h1 {
+    text-align: center;
+    padding-top: 40px;
+}
+.login label{
+    padding-left: 100px;
+    font-size: 20px;
+}
+.login input[type=text], input[type=password]{
+    width: 250px;
+    height: 30px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+.login div{
+    width: 100px;
+    height: 50px;
+    margin: auto;
+    margin-top: 30px;
+}
+.login select{
+    width: 247px;
+    height: 30px;
+    margin-top: 30px;
+    margin-left: 5px;
+}
+.login div button{
+    width: 100px;
+    height: 50px;
+    background-color: #3B71CA;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 600;
+}
+.login div button:hover{
+    background-color:blanchedalmond;
+    color: black;
+    font-weight: 600;
+}

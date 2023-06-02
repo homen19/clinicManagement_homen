@@ -1,0 +1,618 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    background-color: #8D3DAF;
+    display: flex;
+}
+
+nav .left {
+    width: 50%;
+    height: 80px;
+    /* border-right: 1px solid red; */
+}
+
+nav .left h1 {
+    padding-top: 20px;
+    padding-left: 50px;
+    color: #fff;
+}
+
+nav .right {
+    width: 50%;
+    height: 80px;
+    /* border: 1px solid red; */
+}
+
+nav .right p{
+    float: right;
+    position: relative;
+    top: 20px;
+    right: 50px;
+    font-size: 20px;
+    color: #fff;
+
+} 
+nav .right p i:hover{
+    color: red;
+    font-size: 30px;
+}
+
+nav .right .profile img {
+    padding: 5px 5px;
+}
+
+/* -------container----------- */
+
+.container {
+    width: 100%;
+    height: 87vh;
+    /* border: 1px solid red; */
+    display: flex;
+}
+
+.container .controller {
+    width: 20%;
+    height: 87vh;
+    background-color: #383CC1;
+}
+
+
+.container .controller ul li .item {
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    padding: 20px 60px;
+    font-size: 17px;
+
+}
+
+.container .controller ul li .item:hover {
+    color: black;
+    background-color: #14A44D;
+    cursor: pointer;
+}
+
+.container .view {
+    width: 80%;
+    height: 87vh;
+    /* background-color: #CAD5E2; */
+}
+
+.container .view .home {
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    margin-top: 3vh;
+    border-radius: 10px;
+    /* border: 1px solid red; */
+
+}
+
+.container .view .home .status {
+    width: 100%;
+    height: 150px;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+
+
+}
+
+.container .view .home .number-user {
+    width: 200px;
+    height: 100px;
+    background-color: #3B71CA;
+    border-radius: 10px;
+    color: #fff;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.container .view .home .number-doctor {
+    width: 200px;
+    height: 100px;
+    background-color: #8D3DAF;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.container .view .home .number-rec {
+    width: 200px;
+    height: 100px;
+    background-color: #14A44D;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 20px;
+    color: #fff;
+}
+
+.container .view .home .number-cases {
+    width: 200px;
+    height: 100px;
+    background-color: #DC4C64;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 20px;
+    color: #fff;
+}
+
+/* ---register doctors------- */
+
+.register-doctors {
+    width: 90%;
+    height: 80vh;
+    margin: auto;
+    margin-top: 3vh;
+    border-radius: 10px;
+    /* border: 1px solid red; */
+    background-color: aliceblue;
+    display: none;
+
+}
+
+.register-doctors:hover {
+    background-color: #CAD5E2;
+}
+
+.register-doctors .head {
+    text-align: center;
+    padding: 20px 20px;
+
+}
+
+.register-doctors .functions {
+    width: 80%;
+    height: 300px;
+    /* border: 1px solid red; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+}
+
+.register-doctors .functions .view-doctors,
+.register,
+.view-doctors {
+    width: 200px;
+    height: 200px;
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 20px;
+    background-color: #6A1B4D;
+
+}
+
+.register-doctors .functions .view-doctors:hover {
+    background-color: #8D3DAF;
+    -webkit-box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.register-doctors .functions .register:hover {
+    background-color: #8D3DAF;
+    -webkit-box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.register-doctors .functions .view-doctors h2,
+i {
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.register-doctors .functions .register h2,
+i {
+    color: #fff;
+    color: #fff;
+}
+
+/* -------doctor -registration form---------- */
+.doctor-registration-form {
+    width: 90%;
+    height: 463px;
+    margin: auto;
+    position: relative;
+    top: -360px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: none;
+}
+
+.doctor-registration-form h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+.doctor-registration-form .btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 17px;
+    border: none;
+    width: 30px;
+    background-color: #fff;
+}
+
+.doctor-registration-form .btn i {
+    color: black;
+    font-weight: 700;
+}
+
+.doctor-registration-form .btn i:hover {
+    color: red;
+
+}
+
+.doctor-registration-form .form {
+    display: flex;
+}
+
+.doctor-registration-form .form .left {
+    width: 50%;
+    height: 360px;
+    /* border: 1px solid red; */
+    display: block;
+    padding: 20px 70px;
+    overflow: hidden;
+}
+
+.doctor-registration-form .form .left input[type=text],
+input[type=file] {
+    width: 90%;
+    height: 40px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 2px;
+}
+
+.doctor-registration-form .form .left input[type=radio] {
+    margin-bottom: 15px;
+}
+
+.doctor-registration-form .form .right {
+    width: 50%;
+    height: 350px;
+    /* border: 1px solid red; */
+    padding: 20px 70px;
+}
+
+.doctor-registration-form .form .right input[type=text] {
+    width: 90%;
+    height: 40px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 2px;
+}
+
+.doctor-registration-form .form .right input[type=submit] {
+    width: 150px;
+    height: 40px;
+    background-color: #3B71CA;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 5px;
+}
+
+.doctor-registration-form .form .right input[type=submit]:hover {
+    background-color: #14A44D;
+    color: black;
+}
+
+
+/* -------view doctors------- */
+.view-doctor-details {
+    width: 90%;
+    height: 463px;
+    margin: auto;
+    position: relative;
+    top: -360px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: none;
+
+}
+
+.view-doctor-details h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+.view-doctor-details .btn-doctor-details {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 17px;
+    border: none;
+    width: 30px;
+    background-color: #fff;
+}
+
+.view-doctor-details .btn-doctor-details i {
+    color: black;
+    font-weight: 700;
+}
+
+.view-doctor-details .btn-doctor-details i:hover {
+    color: red;
+
+}
+
+.view-doctor-details #doctors {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+    margin: auto;
+    
+    
+  }
+  
+  .view-doctor-details #doctors td, #doctors th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  .view-doctor-details #doctors td button{
+    width: 50px;
+    height: 35px;
+    background:#3B71CA;
+    padding: 7px;
+    border: none;
+    font-size: 18px;
+    border-radius: 50px;
+    margin-left: 10px;
+  }
+ 
+  .view-doctor-details #doctors tr:nth-child(even){background-color: #f2f2f2;}
+  
+  .view-doctor-details #doctors tr:hover {background-color: #ddd;}
+  
+  .view-doctor-details #doctors th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #54B4D3;
+    color: white;
+  }
+
+/* ----register reciptionist----- */
+.register-reciptionist {
+    width: 90%;
+    height: 80vh;
+    margin: auto;
+    margin-top: 3vh;
+    border-radius: 10px;
+    /* border: 1px solid red; */
+    background-color: aliceblue;
+    display: none;
+
+}
+.register-reciptionist:hover {
+    background-color: #CAD5E2;
+}
+
+.register-reciptionist-form h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+
+.register-reciptionist .head h1 {
+    text-align: center;
+    padding: 20px 20px;
+    color: black;
+}
+
+.register-reciptionist .functions {
+    width: 80%;
+    height: 300px;
+    /* border: 1px solid red; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+}
+.register-reciptionist .functions .view-doctors, .register h2{
+    color: #fff;
+}
+
+/* --------register-reciptionist-form----- */
+.register-reciptionist-form {
+    width: 80%;
+    height: 463px;
+    margin: auto;
+    position: relative;
+    top: -480px;
+    background-color: #fff;
+    border-radius: 10px;
+    /* border: 1px solid red; */
+    display: none;
+   
+}
+.register-reciptionist-form .btn-reciptionist {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 17px;
+    border: none;
+    width: 30px;
+    background-color: #fff;
+}
+
+.register-reciptionist-form .btn-reciptionist i {
+    color: black;
+    font-weight: 700;
+}
+
+.register-reciptionist-form .btn-reciptionist i:hover {
+    color: red;
+
+}
+
+.register-reciptionist-form .form {
+    display: flex;
+}
+
+.register-reciptionist-form .form .left {
+    width: 50%;
+    height: 360px;
+    /* border: 1px solid red; */
+    display: block;
+    padding: 20px 70px;
+    overflow: hidden;
+}
+
+.register-reciptionist-form .form .left input[type=text],
+input[type=file] {
+    width: 90%;
+    height: 40px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 2px;
+}
+
+.register-reciptionist-form .form .left input[type=radio] {
+    margin-bottom: 15px;
+}
+
+.register-reciptionist-form .form .right {
+    width: 50%;
+    height: 350px;
+    /* border: 1px solid red; */
+    padding: 20px 70px;
+}
+
+.register-reciptionist-form .form .right input[type=text] {
+    width: 90%;
+    height: 40px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 2px;
+}
+
+.register-reciptionist-form .form .right input[type=submit] {
+    width: 150px;
+    height: 40px;
+    background-color: #3B71CA;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 5px;
+}
+
+.register-reciptionist-form .form .right input[type=submit]:hover {
+    background-color: #14A44D;
+    color: black;
+}
+
+
+/* ------view reciptionist------ */
+.view-reciptionist-details {
+    width: 80%;
+    height: 463px;
+    margin: auto;
+    position: relative;
+    top: -480px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: none;
+
+}
+
+.view-reciptionist-details h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+.view-reciptionist-details .btn-reciptionist-details {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 17px;
+    border: none;
+    width: 30px;
+    background-color: #fff;
+}
+
+.view-reciptionist-details .btn-reciptionist-details i {
+    color: black;
+    font-weight: 700;
+}
+
+.view-reciptionist-details .btn-reciptionist-details i:hover {
+    color: red;
+
+}
+
+.view-reciptionist-details #reciptionist {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+    margin: auto;
+    
+    
+  }
+  
+  .view-reciptionist-details #reciptionist td, #reciptionist th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  .view-reciptionist-details #reciptionist td button{
+    width: 50px;
+    height: 35px;
+    background:#3B71CA;
+    padding: 7px;
+    border: none;
+    font-size: 18px;
+    border-radius: 50px;
+    margin-left: 10px;
+  }
+ 
+  .view-reciptionist-details #reciptionist tr:nth-child(even){background-color: #f2f2f2;}
+  
+  .view-reciptionist-details #reciptionist tr:hover {background-color: #ddd;}
+  
+  .view-reciptionist-details #reciptionist th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #54B4D3;
+    color: white;
+  }
+
+
+/* ----create users----- */
+.create-users {
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    margin-top: 3vh;
+    border-radius: 10px;
+    border: 1px solid red;
+    display: none;
+
+}
+
+/* -view users------ */
+.view-user {
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    margin-top: 3vh;
+    border-radius: 10px;
+    border: 1px solid red;
+    display: none;
+
+}
